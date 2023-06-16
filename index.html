@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ai Universe Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="text-center mt-10">
+    <h1 class="text-5xl mb-5">AI Universe Hub</h1>
+    <button onclick="sortByDate()" class="btn btn-outline my-5">Sort by Date</button>
+  </header>
+
+  <section class="text-center mx-auto my-10">
+    <div id="cards-container" class="grid grid-cols-3 gap-20 justify-items-center">
+
+    </div>
+  </section>
+
+  <section>
+    <div id="see-more" class="text-center mx-auto my-10 hidden">
+      <button id="see-more-button" class="btn btn-outline btn-success">See More</button>
+    </div>
+  </section>
+
+  <section>
+    <dialog id="my_modal" class="modal">
+      <form method="dialog" class="modal-box w-11/12 max-w-4xl">
+        <div class="flex justify-center gap-10">
+          <div id="modal-first" class="w-2/5 bg-success-content rounded-sm p-5">
+            <h3 id="modal-title-first" class="font-bold text-lg"></h3>
+            <div id="modal-pricing" class="flex gap-2 text-center my-3">
+            </div>
+            <div class="flex">
+              <div id="modal-features"></div>
+              <div id="modal-integrations"></div>
+            </div>
+          </div>
+          <div id="modal-second" class="card w-2/5 bg-base-100 shadow-xl">
+            
+          </div>
+        </div>
+      </form>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+  </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
+<html data-theme="wireframe">
+
+</html>
